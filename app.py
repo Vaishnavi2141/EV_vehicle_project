@@ -49,7 +49,6 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-
 # === Load data (must contain historical values, features, etc.) ===
 @st.cache_data
 def load_data():
@@ -151,7 +150,6 @@ if historical_total > 0:
     st.success(f"Based on the graph, EV adoption in **{county}** is expected to show a **{trend} of {forecast_growth_pct:.2f}%** over the next 3 years.")
 else:
     st.warning("Historical EV total is zero, so percentage forecast change can't be computed.")
-
 
 # === New: Compare up to 3 counties ===
 st.markdown("---")
